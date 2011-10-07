@@ -1,0 +1,35 @@
+SudokuSolver-Generator by majestic53 (majestic53@gmail.com)
+
+A sudoku solver/generator using an implementation of the dancing links algorithm.
+
+Version 1.0.0:
+
+Features:
+
+    Efficient puzzle solving with a low memory footprint
+    Solve sudoku puzzles with any number of unknowns 
+	(Note: puzzles with less than 17 known values are not guaranteed to have unique results).
+    Generate puzzles with a given number of unknowns (0 - 64 unknowns).
+
+Usage:
+
+    For solver:
+
+    	SudokuSolver solver = new SudokuSolver(<int[][] unsolvedPuzzle>);
+	solver.solve();
+	int[][] solvedPuzzle = solver.getBoard();
+
+    For generator:
+	
+	int[][] unsolvedPuzzle = SudokuGenerator.generate(<int unknowns>);
+
+Known Bugs:
+
+     None at the moment
+
+Changelog:
+
+Version 1.0.0
+
+     Initial release
+
